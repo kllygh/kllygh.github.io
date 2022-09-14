@@ -1,29 +1,137 @@
-<head>
-  <style>
-      .introduction-box{
-        background-color: #468AB9;
-        border:solid #325B77 3px ;
-        margin: auto;
-        text-align: center;
-      }
-      
-  </style>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1>Short Introduction Of Myself </h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<body>
-  Below is a photo of me:
-  <img src="Kelly_Face.jpg"
-      width="170"  
-      height="227"/> <br>
-  <br>
-  This is my favorite youtube video <br>
-  <iframe width="420" height="315"
-    src="https://www.youtube.com/watch?v=Su6kidaGW_8">
-  </iframe><Br>
-  <Br>
-  <div class = "introduction-box">
-     Hello hello hello Hello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello helloHello hello hello
-  </div>
-</body>
+    <style>
+        /*Can input your CSS codes here*/
+        body{
+            background-color: ghostwhite;
+        }
+
+        .carousel {
+          width:400px;
+          height:100px;
+        }
+
+
+
+    </style>
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="G_Logo.jpg" height="50" alt="Bootstr"> oh Kelly
+        </a>
+        <!--The button that helps you have a drop down-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--End of button-->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--This is where you input your code-->
+    <div class="container my-4 mx-auto text-center">
+        <iframe width="750" height="350"
+          src="https://www.youtube.com/embed/kVxTrhojpFI?autoplay=1&mute=1&controls=0" >
+        </iframe>
+
+        <!--Carousell-->
+        <div>
+          <div id="carouselExampleIndicators" class="carousel slide mx-auto h-100" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner my-4">
+              <div class="carousel-item active">
+                <img src="Images/Photo1.jpg" class="d-block h-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Photo2.jpg" class="d-block h-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Photo3.jpg" class="d-block h-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Photo4.jpg" class="d-block h-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Photo5.jfif" class="d-block h-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Photo6.jfif" class="d-block h-50" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!--End of Carousell-->
+        
+        <div>
+          <h1>Short self introduction:</h1>
+          <p>
+              My name is kelly and I am currently studying in SMU IS. I love western food. Thank you. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vel blanditiis tempora, odit, eius sequi ut ducimus impedit eaque dolor libero optio mollitia voluptatem voluptate, laboriosam dicta voluptatibus inventore dignissimos!
+          </p>
+        </div>
+        
+
+        <div>
+            <h3>Small Biography</h3>        
+            I am kelly goh, i have two sibilings. One of them is older and the other is younger. Yes, I am the middle child. Dont ask me if I have middle child syndromes because I honestly have no idea. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur odit aliquid beatae minima quae itaque natus, harum unde cumque facilis quia debitis nemo quo, nulla ex? Nemo ut obcaecati quasi?
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
